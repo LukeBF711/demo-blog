@@ -4,25 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WanderNote — Travel Journal</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Top Navigation -->
     <nav id="topbar">
       <div class="logo">WanderNote</div>
-      <div class="links">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Destinations</a>
-        <a class="nav-link" href="#">Tips</a>
-        <a class="nav-link" href="#">About</a>
-      </div>
+      <ul class="links">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Destinations</a></li>
+        <li><a class="nav-link" href="#">Tips</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+      </ul>
     </nav>
     <!-- Hero Section -->
     <section id="hero">
       <div class="hero-inner">
-        <img class="hero-img" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="Traveler overlooking mountains" />
-
-        <div class="headline">Stories from the road</div>
-        <div class="sub">Notes, photos, and pocket itineraries.</div>
+        <!-- <img class="hero-img" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="Traveler overlooking mountains" /> -->
+        <h1 class="headline">Stories from the road</h1>
+        <p class="sub">Notes, photos, and pocket itineraries.</p>
       </div>
     </section>
     <!-- Main Content -->
@@ -30,28 +30,28 @@
       <div id="content">
         <div class="left-col">
           <!-- Post 1 -->
-          <div class="post card">
-            <div class="post-title">Kyoto in 48 Hours</div>
-            <div class="post-meta">May 2025 · Asia · Budget</div>
+          <article class="post card">
+            <h2 class="post-title">Kyoto in 48 Hours</h2>
+            <p class="post-meta">May 2025 · Asia · Budget</p>
             <img class="post-img" src="https://picsum.photos/id/1016/800/500" alt="Kyoto trip collage" />
             <div class="post-body">
               <p>Temple hopping, alley ramen, and morning markets.</p>
             </div>
-          </div>
+          </article>
           <!-- Post 2 -->
-          <div class="post card">
-            <div class="post-title">Lisbon Hill Walk</div>
-            <div class="post-meta">April 2025 · Europe · Walkable</div>
+          <article class="post card">
+            <h2 class="post-title">Lisbon Hill Walk</h2>
+            <p class="post-meta">April 2025 · Europe · Walkable</p>
             <img class="post-img" src="https://picsum.photos/id/1035/800/500" alt="Lisbon city view" />
             <div class="post-body">
               <p>Tiles, trams, and sunset at Miradouro.</p>  
             </div>
-          </div>
+          </article>
         </div>
         <!-- Sidebar -->
         <aside class="right-col">
           <div class=""panel>
-            <div class="panel-title">Popular Tags</div>
+            <h2 class="panel-title">Popular Tags</h2>
             <div class="tag-list">
               <a href="#" class="tag">streetfood</a>
               <a href="#" class="tag">itinerary</a>
@@ -63,7 +63,7 @@
     </main>
     <!-- Footer -->
     <footer id="bottombar">
-      <div class="copy">© 2025 WanderNote</div>
+      <p class="copy">© 2025 WanderNote</p>
     </footer>
   </body>
 </html>

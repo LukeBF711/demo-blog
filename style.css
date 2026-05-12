@@ -1,29 +1,71 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    width: 100%;
+    /* overflow-x: hidden; */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* task 1: make the nav bar sticky */
 #topbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px 16px;
   border-bottom: 1px solid #e5e7eb;
   background: #f9fafb;
 }
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.links > li {
+    list-style: none;
+    display: inline-block; /*research this*/
+    /* text-decoration: none; */
+    padding: 8px 12px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
 .logo {
   font-weight: bold;
+  font-size: 2rem;
 }
+
 #hero {
-  padding: 48px 16px;
-  background: #eef2ff;
-  text-align: center;
+    padding: 48px 16px;
+    background: #eef2ff;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .headline {
-  font-size: 28px;
+  font-size: 3rem;
   margin-bottom: 8px;
+  color: white;
 }
 .sub {
-  color: #555;
+  color: white
 }
 #content {
   display: grid;
@@ -31,6 +73,7 @@ body {
   gap: 16px;
   padding: 16px;
 }
+
 .card {
   border: 1px solid #e5e7eb;
   padding: 12px;
@@ -77,4 +120,10 @@ body {
   border-radius: 8px;
   margin: 8px 0;
   display: block;
+}
+
+/* Sticky */
+#sticky {
+    position: sticky;
+    top: 0;
 }
